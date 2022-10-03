@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+
+
+<!--Please forgive the sloppy indentation, and other formmating issues. -->
+<!--This was written via windows Notepad. Built on secure system that does not allow installing programs-->
+
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<html>
+
+  <body>
+    <div>
+    <a href="../index.html">Go Home</a>
+    <h1>Miscellaneous Calculators</h1>
+    
+
+
+
+    <div class="tool">
+    <h2>Coverage Change Calculator Tool</h2>
+    <p>Input the current coverages, and the desired new coverage A, and the calculator will give you the respective coverage B, C, and D</p>
+    <table>
+      <tr>
+	<th> </th>
+	<th>Current Coverage</th>
+	<th>New Coverage</th>
+      </tr>
+      <tr>
+	<td class="row-label">Coverage A</td>
+	<td><input id="currentA"></input></td>
+	<td><input id="newA"></input></td>
+      </tr>
+      <tr>
+	<td class="row-label">Coverage B</td>
+	<td><input id="currentB"></input></td>
+	<td id="newB" class="output"></td>
+      </tr>
+      <tr>
+	<td class="row-label">Coverage C</td>
+	<td><input id="currentC"></input></td>
+	<td id="newC" class="output"></td>
+      </tr>
+      <tr>
+	<td class="row-label">Coverage D</td>
+	<td><input id="currentD"></input></td>
+	<td id="newD" class="output"></td>
+      </tr>
+    </table>
+
+    <button onclick="covChange()"> Calculate </button>
+    </div>
+
+
+
+    <div class="tool">
+    <h2>Premium Increase Calculator</h2>
+    <p>Input the current premium and the renewal offer premium, and the calculator will give you the total increase, and the percent increase</p>
+    <table>
+        <tr>
+	<td class="row-label">Current Premium</td>
+	<td><input id="currentP"></input></td>
+        </tr>
+        <tr>
+	<td class="row-label">Renewal Premium</td>
+	<td><input id="renewalP"></input></td>
+        </tr>
+        <tr>
+	<td class="row-label">Total Increase</td>
+	<td id="tInc" class="output"></td>
+        </tr>
+        <tr>
+	<td class="row-label">Percent Increase</td>
+	<td id="pInc" class="output"></td>
+        </tr>
+
+    </table>
+
+    <button onclick="premiumInc()"> Calculate </button>
+    </div>
+
+
+
+
+
+    </div>
+
+  </body>
+   <script type='text/javascript' src="script.js"></script>
+
+</html>
