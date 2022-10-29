@@ -31,3 +31,28 @@ const premiumInc = () => {
 	document.getElementById("pInc").innerHTML = `${Math.round((fInc/cp)*10000)/100}%`
 
 }
+
+// Prorata or Annualized Calculator
+const proAmCalc = () => {
+	let termEffDate = new Date(document.getElementById("effectiveDate").value)
+	let termExpDate = new Date(document.getElementById("expirationDate").value)
+	let endrEffDate = new Date(document.getElementById("endrEffDate").value)
+	let proQuotedInc = document.getElementById("proratedQuotedInc").value
+	let annCalcInc = document.getElementById("annCalcInc").innerHTML
+	let annQuotedInc = document.getElementById("annQuotedInc").value
+	let proCalcInc = document.getElementById("proratedCalcInc").innerHTML
+
+	let termDays = (termExpDate - termEffDate) / (1000 * 3600 * 24)
+	let prorataToExpDays = (termExpDate - endrEffDate) / (1000 * 3600 * 24)
+
+	if (proQuotedInc) {
+		let solution = (proQuotedInc/prorataToExpDays)*365.25
+		document.getElementById("annCalcInc").innerHTML = `$${solution.toFixed(2)}`
+	}
+	if (annQuotedInc) {
+		let solutionTwo = (annQuotedInc/365.25)*prorataToExpDays
+		document.getElementById("proratedCalcInc").innerHTML = `$${solutionTwo.toFixed(2)}`
+	}
+
+
+}

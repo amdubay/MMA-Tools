@@ -82,6 +82,44 @@
     </div>
 
 
+    <div class="tool">
+      <h2>Prorata or Annualized calculator</h2>
+      <p>Input the policy term and the quoted endorsement effective date. Also input the quoted premium increase in the appropriate field</p>
+      <table>
+          <tr>
+        <td class="row-label">Policy Term Effective Date</td>
+        <td><input id="effectiveDate" type="date"></input></td>
+          </tr>
+          <tr>
+        <td class="row-label">Policy Term Expiration Date</td>
+        <td><input id="expirationDate" type="date"></input></td>
+          </tr>
+          <tr>
+        <td class="row-label">Endr Effective Date</td>
+        <td><input id="endrEffDate" type="date"></input></td>
+          </tr>
+          <tr>
+        <td class="row-label">Prorated Quoted Increase</td>
+        <td><input id="proratedQuotedInc"></input></td>
+          </tr>
+          <tr>
+            <td class="row-label">Calculated Annualized Increase Quote</td>
+            <td id="annCalcInc" class="output"></td>
+          </tr>
+          <tr>
+            <td class="row-label">Annualized Quoted Increase</td>
+            <td><input id="annQuotedInc"></input></td>
+          </tr>
+          <tr>
+            <td class="row-label">Calculated Prorated Increase Quote</td>
+            <td id="proratedCalcInc" class="output"></td>
+          </tr>
+  
+      </table>
+  
+      <button onclick="proAmCalc()"> Calculate </button>
+      </div>
+
 
 
 
