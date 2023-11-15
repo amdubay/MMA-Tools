@@ -59,6 +59,14 @@
     <h2>Premium Increase Calculator</h2>
     <p>Input the current premium and the renewal offer premium, and the calculator will give you the total increase, and the percent increase</p>
     <table>
+      <tr>
+        <td class="row-label">Renewal Date</td>
+        <td><input id="renDate"></input></td>
+              </tr>
+              <tr>
+                <td class="row-label">Carrier</td>
+                <td><input id="carrier"></input></td>
+                      </tr>
         <tr>
 	<td class="row-label">Current Premium</td>
 	<td><input id="currentP"></input></td>
@@ -77,6 +85,7 @@
         </tr>
 
     </table>
+    <p id="premiumIncreaseSentence"></p>
 
     <button onclick="premiumInc()"> Calculate </button>
     </div>
